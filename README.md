@@ -13,10 +13,49 @@ Took some inspiration on the PHPStorm [Nord](https://www.nordtheme.com/ports/jet
 - responsive multi-column markdown render
 - 2-column export for pdf
 
-## Todo
+## joplin theme
+# dark mode
+a dark mode theme for Joplin.
 
-- [ ] Clean CSS
+Joplin is an open source note taking app. Learn more about [Joplin](http://joplinapp.org).
 
+It has been tested on Mac version Joplin Joplin 1.0.232 (prod, darwin)
+
+## Screenshots
+![v0.7.1-updates.png](/screenshots/v0.7.1-updates.png)
+
+## 1. Install Font
+
+This theme assumes you have IBM Plex Sans and IBM Plex Mono installed on your computer.
+
+Install those from [https://github.com/IBM/plex](https://github.com/IBM/plex) or change the following lines in the `:root` section of  `userstyle.css` and `userchrome.css` to your favorite font:
+```
+--font-sans: "IBM Plex Sans";
+--font-mono: "IBM Plex Mono";
+```
+
+## 2. Install Theme
+- Open the Joplin app
+- Navigate to  `Joplin > Preferences > Appearances`
+- Click `Advanced Settings`
+- Click `Custom stylesheet for rendered Markdown` and paste the content from `userstyle.css`
+- Edit `Custom stylesheet for Joplin-wide app styles` and paste the content from `userchrome.css`
+
+
+### Apply Changes
+The css changes won't apply until you close and reopen the app.
+
+HINT: If you are using Dev Tools to mess with CSS `Help > Toggle Developer tools`, you can hit `Command-R` (Mac) to Force Reload the app to apply the CSS without having to quit.
+
+## 3. Check to see how it looks.
+You can paste `css-sample.md` into a new Joplin note to see it in action.
+
+- Make sure to select the "Dark" Theme in `Joplin > Preferences > Appearances`
+- Editor font size is set to 14
+
+![joplin-appearance-settings.png](/img/joplin-appearance-settings.png)
+
+- HINT: I often have to force quit and restart the app after applying CSS changes and switching notes, not sure why.
 
 ## Installation
 
